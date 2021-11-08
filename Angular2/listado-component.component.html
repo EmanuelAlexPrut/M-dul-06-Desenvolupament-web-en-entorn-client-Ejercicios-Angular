@@ -1,0 +1,24 @@
+<br/>
+<table>
+  <tr *ngFor="let nombres of listaHeroes">
+    <td>
+      <h2>Nombre del heroe:</h2>
+            {{nombres}}
+  </td>
+    </tr>
+</table>
+<br/>
+<br/>
+<div>
+  <button (click) = 'borrarHeroe()'*ngIf="borrarHeroe">Borrar Héroe</button>
+  <p () = 'borrarHeroe()'*ngIf="borrarHeroe">Borrar Héroe></p>
+</div>
+<br/>
+<table>
+  <tr *ngFor="let edades of listaEdades">
+    <td>
+      <h2>Edad del heroe:</h2>
+            {{edades}}
+  </td>
+    </tr>
+</table>
